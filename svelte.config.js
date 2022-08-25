@@ -1,20 +1,16 @@
-import adapter from '@sveltejs/adapter-static'; // was adapter-auto
+// svelte.config.js
+import adapter from 'svelte-adapter-github';
 
-const dev = process.env.NODE_ENV === 'development';
-
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
+export default {
 	kit: {
 		adapter: adapter({
+			// default options are shown
 			pages: 'docs',
-			assets: 'docs'
-		}),
-		paths: {
-			base: dev ? '' : '/your-repo-name',
-		},
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+			assets: 'docs',
+			domain: null,
+			jekyll: false,
+			fallback: null,
+			precompress: false
+		})
 	}
 };
-
-export default config;

@@ -6,12 +6,14 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-	<link rel="modulepreload" href="/_app/start-90116236.js">
-	<link rel="modulepreload" href="/_app/chunks/vendor-376d9ec5.js">
-	<link rel="modulepreload" href="/_app/layout.svelte-bdf424bc.js">
-	<link rel="modulepreload" href="/_app/pages/index.svelte-b2f64624.js">
+	<link rel="stylesheet" href="/_app/assets/vendor-68cfe706.css">
+	<link rel="stylesheet" href="/_app/assets/global-24894493.css">
+	<link rel="modulepreload" href="/_app/start-415bd608.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-a2eb765a.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-b2fc2a68.js">
+	<link rel="modulepreload" href="/_app/pages/index.svelte-dc3f2cbc.js">
 			<script type="module">
-				import { start } from "/_app/start-90116236.js";
+				import { start } from "/_app/start-415bd608.js";
 				start({
 					target: document.body,
 					paths: {"base":"","assets":""},
@@ -23,8 +25,8 @@
 						status: 200,
 						error: null,
 						nodes: [
-							import("/_app/layout.svelte-bdf424bc.js"),
-						import("/_app/pages/index.svelte-b2f64624.js")
+							import("/_app/pages/__layout.svelte-b2fc2a68.js"),
+						import("/_app/pages/index.svelte-dc3f2cbc.js")
 						],
 						url: new URL("http://sveltekit-prerender/"),
 						params: {}
@@ -36,9 +38,16 @@
 		<div id="svelte">
 
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-Test Application
+<h1>Layout Stuff</h1>
+<div class="flex justify-center"><article class="prose lg:prose-xl"><h1>Hello, I&#39;m Hai</h1>
+    <div class="avatar placeholder "><div class="bg-neutral-focus text-neutral-content rounded-full w-48 place-self-center"><span class="text-3xl">HR</span></div></div>
+    <p>Hi, my name is Hai-Ling, and I&#39;m currently a Computer Engineering (Software Specialization) student 
+        at Queen&#39;s University in Kingston, ON.
+        Set to graduate Spring 2023 and looking for full time opportunities!
+    </p>
+        Set to graduate Spring 2023 and looking for full time opportunities!
+    <p></p>
+    </article></div>
 
 </div>
 	</body>
