@@ -21,7 +21,7 @@
             <button class='btn btn-ghost m-2' onclick="window.location.href='{social.link}';">{social.btn_name}</button>
             {/each}
         </div>
-        <button href="#About" class="btn btn-primary m-4">About Me!</button>
+        <button onclick="window.location.href='/#About';" class="btn btn-primary m-4">About Me!</button>
       </div>
     </div>
   </div>
