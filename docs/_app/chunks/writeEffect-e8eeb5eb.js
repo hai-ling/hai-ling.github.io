@@ -1,1 +1,0 @@
-import{s as t,r as c,b as e}from"./animationSetup-d5beeac0.js";const y=async a=>t(Array.isArray(a)?a[c(0,a.length)]:a),p=async({currentNode:a,text:n},i)=>{e(a,i.parentElement,s=>{const r=a===s?"typing":"finished-typing";s.classList.add(r)});for(let s=0;s<=n.length;s++)n[s]==="<"&&(s=n.indexOf(">",s)),a.innerHTML=n.slice(0,s),await y(i.interval)};export{y as t,p as w};

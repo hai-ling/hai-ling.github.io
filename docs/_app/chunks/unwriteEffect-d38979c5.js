@@ -1,1 +1,0 @@
-import{t as l}from"./writeEffect-e8eeb5eb.js";const c=async(r,n)=>{const t=r.innerHTML.replaceAll("&amp;","&");for(let e=t.length-1;e>=0;e--)t[e]===">"&&(e=t.lastIndexOf("<",e)),r.innerHTML=t.slice(0,e),await l(n.unwriteInterval?n.unwriteInterval:n.interval)};export{c as u};
