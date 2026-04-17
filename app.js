@@ -279,7 +279,7 @@
       .map((l) => {
         const target = l.external ? ` target="_blank" rel="noopener"` : "";
         const icon = ICONS[l.icon] || "";
-        return `<a href="${escape(l.href)}"${target} class="contact-link">${icon}${escape(l.label)}</a>`;
+        return `<a href="${escape(l.href)}"${target} class="contact-link">${icon} ${escape(l.label)} </a>`;
       })
       .join("");
     setHTML(
@@ -296,7 +296,7 @@
 
   const renderFooter = () => {
     setHTML(
-      "#site-footer",
+      "footer",
       `<p>&copy; ${escape(c.meta.footerYear)} ${escape(c.meta.name)}</p>`
     );
   };
